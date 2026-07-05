@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart City Semantic Segmentation Platform | Laura Cosma</title>
+  <meta name="description" content="AI product case study by Laura Cosma based on compact semantic segmentation for urban street scenes and smart city applications." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo">Laura Cosma</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#about">About</a>
+        <a href="../cv.pdf">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero container smart-city-hero">
+      <div>
+        <p class="eyebrow">Product case study</p>
+        <h1>Smart City Semantic Segmentation Platform</h1>
+        <p class="hero-summary">
+          A computer vision product case study based on an in-press research paper on compact semantic segmentation
+          for urban street scenes. The product translates pixel-level scene understanding into practical smart city
+          capabilities for traffic analysis, infrastructure monitoring, intelligent mobility, and urban digital services.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#results">View Evidence</a>
+          <a class="button secondary" href="../index.html#projects">Back to Portfolio</a>
+        </div>
+      </div>
+
+      <aside class="project-meta-card">
+        <h2>Case study focus</h2>
+        <ul>
+          <li>AI product strategy</li>
+          <li>Semantic segmentation</li>
+          <li>Urban scene understanding</li>
+          <li>Smart city vision systems</li>
+          <li>Cityscapes validation</li>
+          <li>Accuracy-complexity trade-off</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>From segmentation research to smart city product strategy</h2>
+      </div>
+      <div>
+        <p>
+          This case study translates an in-press research paper on semantic segmentation of urban street scenes into a
+          product-oriented smart city concept. The research proposes a compact custom encoder-decoder architecture
+          designed to balance segmentation quality and computational efficiency.
+        </p>
+        <p>
+          The product concept focuses on turning pixel-level segmentation outputs into decision-support capabilities for
+          city operators, mobility platforms, infrastructure teams, and urban analytics systems.
+        </p>
+        <div class="status-note">
+          <strong>Status:</strong> Product case study based on an in-press research paper. The segmentation component is
+          supported by Cityscapes validation results; deployment dashboards, edge optimization, official test-server evaluation, and smart city integrations
+          are positioned as product extensions.
+        </div>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">My role</p>
+        <h2>Research translated into an urban AI product concept</h2>
+      </div>
+      <div>
+        <p>
+          My contribution includes translating the semantic segmentation research into a product case study with a clear
+          problem, target users, MVP scope, roadmap, AI risks, evaluation metrics, and deployment-oriented trade-offs.
+        </p>
+        <p>
+          The product framing focuses on what the model enables in practice: dense urban scene understanding, automated
+          monitoring, visual evidence, and operational support for smart city systems.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Problem</p>
+        <h2>Smart city systems need reliable visual understanding</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          Smart city systems increasingly depend on cameras and digital perception modules to understand streets,
+          intersections, sidewalks, mobility flows, and infrastructure conditions. Raw images are not enough: the system
+          must understand which pixels correspond to roads, vehicles, pedestrians, buildings, vegetation, traffic signs,
+          and other urban classes.
+        </p>
+        <p>
+          Many strong segmentation models are too large or too expensive for continuous deployment in practical urban
+          environments. For a real smart city product, accuracy must be balanced with computational cost, scalability,
+          maintainability, and deployment feasibility.
+        </p>
+        <p>
+          This creates a product opportunity for a compact segmentation module that can support urban scene understanding
+          while remaining realistic for deployment in monitoring pipelines and intelligent mobility systems.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Users</p>
+        <h2>Target users and adoption context</h2>
+      </div>
+
+      <div class="skill-columns">
+        <article>
+          <h3>City mobility teams</h3>
+          <p>Need automated understanding of roads, vehicles, pedestrians, and traffic-relevant scene elements.</p>
+        </article>
+        <article>
+          <h3>Infrastructure monitoring teams</h3>
+          <p>Need visual evidence and spatial maps for sidewalks, roads, buildings, vegetation, and urban assets.</p>
+        </article>
+        <article>
+          <h3>Smart city vendors</h3>
+          <p>Need deployable AI modules that can be integrated into existing urban analytics platforms.</p>
+        </article>
+        <article>
+          <h3>AI researchers and engineers</h3>
+          <p>Need reproducible benchmarks, model comparisons, and architecture-performance trade-off analysis.</p>
+        </article>
+      </div>
+
+      <div class="note-card">
+        <strong>Product framing:</strong> this is a perception module for decision support and urban analytics, not a
+        fully autonomous decision system.
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Personas</p>
+        <h2>Two representative users</h2>
+        <p>
+          These personas keep the product focused on operational urban decisions rather than model scores alone.
+        </p>
+      </div>
+
+      <div class="two-card-grid">
+        <article class="content-card persona-card">
+          <h3>Smart City Operations Manager</h3>
+          <p>
+            Needs reliable visual summaries from street cameras to monitor mobility, infrastructure, and urban activity.
+          </p>
+          <ul>
+            <li>Wants interpretable scene maps, not raw model logits.</li>
+            <li>Needs stable performance across diverse urban conditions.</li>
+            <li>Values alerts and reports that support human review.</li>
+          </ul>
+        </article>
+
+        <article class="content-card persona-card">
+          <h3>AI / Computer Vision Engineer</h3>
+          <p>
+            Needs a segmentation module that can be evaluated, integrated, monitored, and optimized for deployment.
+          </p>
+          <ul>
+            <li>Needs metrics such as mIoU, macro-F1, pixel accuracy, parameters, and compute cost.</li>
+            <li>Needs clear model variants and training strategy documentation.</li>
+            <li>Values architecture simplicity and deployment feasibility.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Vision</p>
+        <h2>An urban perception layer for smart city platforms</h2>
+      </div>
+      <div>
+        <p>
+          The product vision is to provide a semantic segmentation layer that converts street images into structured,
+          pixel-level urban understanding. This layer can support traffic analysis, infrastructure monitoring, digital
+          urban twins, road-scene analytics, and intelligent mobility services.
+        </p>
+        <p>
+          The platform should expose segmentation outputs, confidence information, visual overlays, and operational
+          metrics in a way that supports human decision-making and system integration.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">User journey</p>
+        <h2>From camera image to urban insight</h2>
+        <p>
+          The user journey connects image ingestion, segmentation, visualization, review, and integration into smart city workflows.
+        </p>
+      </div>
+
+      <div class="journey-grid smart-city-journey">
+        <article><span>1</span><h3>Ingest image</h3><p>The system receives an image or video frame from a street camera or dataset.</p></article>
+        <article><span>2</span><h3>Segment scene</h3><p>The model assigns semantic labels to each pixel in the urban image.</p></article>
+        <article><span>3</span><h3>Generate overlay</h3><p>The product displays color-coded segmentation maps and overlays.</p></article>
+        <article><span>4</span><h3>Extract indicators</h3><p>The system derives class-level indicators such as road, vehicle, pedestrian, and sidewalk coverage.</p></article>
+        <article><span>5</span><h3>Review results</h3><p>Operators or engineers review outputs, errors, and confidence-related signals.</p></article>
+        <article><span>6</span><h3>Integrate workflow</h3><p>Segmentation outputs feed dashboards, reports, or downstream smart city applications.</p></article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Core capabilities</p>
+        <h2>AI modules translated into product capabilities</h2>
+      </div>
+
+      <div class="capability-grid">
+        <article>
+          <h3>Semantic segmentation</h3>
+          <p><strong>Product role:</strong> assigns semantic labels to every pixel in an urban scene.</p>
+          <p><strong>User value:</strong> dense visual understanding for city-scale monitoring.</p>
+        </article>
+        <article>
+          <h3>Urban class analytics</h3>
+          <p><strong>Product role:</strong> extracts information about roads, sidewalks, vehicles, pedestrians, buildings, and vegetation.</p>
+          <p><strong>User value:</strong> converts segmentation output into operational indicators.</p>
+        </article>
+        <article>
+          <h3>Visual evidence</h3>
+          <p><strong>Product role:</strong> provides overlays and segmentation maps for human review.</p>
+          <p><strong>User value:</strong> improves interpretability and trust.</p>
+        </article>
+        <article>
+          <h3>Deployment monitoring</h3>
+          <p><strong>Product role:</strong> tracks model quality, drift, speed, and resource usage.</p>
+          <p><strong>User value:</strong> supports reliable smart city operation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Extended capabilities</p>
+        <h2>Future direction: from segmentation model to urban AI service</h2>
+        <p>
+          The research model can evolve into a product service that supports real-time monitoring, edge deployment, and integration with urban systems.
+        </p>
+      </div>
+
+      <div class="feature-detail-grid">
+        <article class="content-card">
+          <h3>Traffic & mobility analytics</h3>
+          <p>
+            Use segmentation outputs to support vehicle, road, sidewalk, and pedestrian analysis in urban mobility workflows.
+          </p>
+          <ul>
+            <li>Road and sidewalk area estimation.</li>
+            <li>Pedestrian and vehicle scene coverage.</li>
+            <li>Intersection-level visual summaries.</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Urban digital twin support</h3>
+          <p>
+            Convert street-scene perception into structured layers that can feed dashboards, reports, or digital twin interfaces.
+          </p>
+          <ul>
+            <li>Class-level scene maps.</li>
+            <li>Overlay visualization for human review.</li>
+            <li>Integration with GIS or urban dashboards.</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Edge-oriented deployment</h3>
+          <p>
+            Explore compression, quantization, pruning, and runtime profiling to make the model more suitable for field deployment.
+          </p>
+          <ul>
+            <li>Latency and memory profiling.</li>
+            <li>Compressed model variants.</li>
+            <li>Device-specific deployment evaluation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Research foundation</p>
+        <h2>Compact encoder-decoder semantic segmentation</h2>
+      </div>
+      <div>
+        <p>
+          The research proposes a custom encoder-decoder architecture with skip connections, depthwise separable
+          convolutions, residual downsampling blocks, a compact bottleneck, and an auxiliary training head.
+        </p>
+        <p>
+          The custom encoder was first pretrained on ImageNet and then fine-tuned on the Cityscapes dataset. The study
+          compared multiple training and architecture variants, including pretraining, bounded learning-rate scheduling,
+          temporary encoder freezing, auxiliary supervision, and deeper encoder configurations.
+        </p>
+        <p>
+          The best configuration achieved <strong>75.15% mIoU</strong>, <strong>85.06% macro-F1</strong>, and
+          <strong>95.66% pixel accuracy</strong> on the Cityscapes validation split.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">MVP</p>
+        <h2>MVP scope</h2>
+        <p>
+          The MVP focuses on validating whether users can upload or process an urban street image, generate a segmentation map,
+          interpret the visual output, and use class-level results in a smart city monitoring workflow.
+        </p>
+      </div>
+
+      <div class="two-card-grid">
+        <article class="content-card">
+          <h3>Included in MVP</h3>
+          <ul>
+            <li>Urban image upload or frame ingestion</li>
+            <li>Semantic segmentation inference</li>
+            <li>Color-coded segmentation map</li>
+            <li>Overlay visualization</li>
+            <li>Class-level scene summary</li>
+            <li>Basic quality metrics dashboard</li>
+            <li>Exportable result image or report</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Not included in MVP</h3>
+          <ul>
+            <li>Real-time city-wide video deployment</li>
+            <li>Automated traffic enforcement decisions</li>
+            <li>Official incident detection or emergency response</li>
+            <li>Edge-device optimization for production</li>
+            <li>GIS or digital twin integration</li>
+            <li>Multi-camera tracking</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Prioritization</p>
+        <h2>MoSCoW prioritization</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Priority</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Image/frame ingestion</td><td>Must</td><td>Required input for the product.</td></tr>
+            <tr><td>Semantic segmentation inference</td><td>Must</td><td>Core product value.</td></tr>
+            <tr><td>Segmentation overlay</td><td>Must</td><td>Makes output understandable to users.</td></tr>
+            <tr><td>Class-level summary</td><td>Must</td><td>Turns pixel labels into operational information.</td></tr>
+            <tr><td>Model quality metrics</td><td>Should</td><td>Supports monitoring and trust.</td></tr>
+            <tr><td>Exportable reports</td><td>Should</td><td>Useful for review and communication.</td></tr>
+            <tr><td>Edge-device profiling</td><td>Could</td><td>Important later for deployment, but not required in MVP.</td></tr>
+            <tr><td>GIS / digital twin integration</td><td>Could</td><td>Valuable extension after the core segmentation workflow is validated.</td></tr>
+            <tr><td>Automated enforcement decisions</td><td>Won’t for now</td><td>High ethical and regulatory risk.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Product roadmap</h2>
+      </div>
+
+      <div class="roadmap">
+        <article>
+          <span>Phase 1</span>
+          <h3>MVP</h3>
+          <p>Image ingestion, segmentation inference, overlay visualization, and class-level summaries.</p>
+        </article>
+        <article>
+          <span>Phase 2</span>
+          <h3>Trust & Evaluation</h3>
+          <p>mIoU, macro-F1, pixel accuracy, class-wise diagnostics, and visual error review.</p>
+        </article>
+        <article>
+          <span>Phase 3</span>
+          <h3>Operational Analytics</h3>
+          <p>Urban indicators, dashboard views, trend summaries, and review workflows.</p>
+        </article>
+        <article>
+          <span>Phase 4</span>
+          <h3>Deployment Readiness</h3>
+          <p>Runtime profiling, memory analysis, pruning, quantization, and edge-device testing.</p>
+        </article>
+        <article>
+          <span>Phase 5</span>
+          <h3>Smart City Integration</h3>
+          <p>GIS, digital twins, mobility platforms, multi-camera pipelines, and governance controls.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Metrics</p>
+        <h2>Success metrics</h2>
+      </div>
+
+      <div class="skill-columns">
+        <article>
+          <h3>Product metrics</h3>
+          <p>Completed analyses, user review rate, report exports, time to insight, dashboard adoption, operator trust score.</p>
+        </article>
+        <article>
+          <h3>Segmentation metrics</h3>
+          <p>mIoU, macro-F1, pixel accuracy, per-class IoU, class-wise error patterns, ignored-region handling.</p>
+        </article>
+        <article>
+          <h3>Efficiency metrics</h3>
+          <p>Parameter count, mult-adds, inference time, memory footprint, deployment feasibility on target hardware.</p>
+        </article>
+        <article>
+          <h3>Risk metrics</h3>
+          <p>Performance drop across conditions, critical-class errors, drift, false visual confidence, operator override rate.</p>
+        </article>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Product interpretation</h3>
+        <p>
+          The best model improves segmentation quality, but it also increases complexity. The product decision is therefore not
+          simply “choose the highest score,” but select the architecture that provides the right balance for the deployment context.
+        </p>
+      </div>
+    </section>
+
+    <section id="results" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Evidence</p>
+        <h2>Research evidence & product interpretation</h2>
+        <p>
+          The evidence shows how pretraining, controlled fine-tuning, auxiliary supervision, and encoder depth affect segmentation
+          quality and complexity. The key product message is the trade-off between stronger urban understanding and deployment cost.
+        </p>
+      </div>
+
+      <div class="evidence-grid">
+        <figure>
+          <img src="../assets/smart-city-architecture.png" alt="Architecture of the proposed semantic segmentation model" />
+          <figcaption>Custom encoder-decoder architecture with residual separable downsampling blocks, skip connections, and an auxiliary head.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/smart-city-miou-progression.png" alt="Cityscapes validation mIoU across model variants" />
+          <figcaption>Pretraining gives the largest performance gain, while later refinements add smaller improvements.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/smart-city-depth-performance.png" alt="Depth-3 versus depth-4 segmentation performance" />
+          <figcaption>The depth-4 model improves mIoU, macro-F1, and pixel accuracy compared with the best depth-3 configuration.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/smart-city-params-tradeoff.png" alt="Parameter count trade-off between depth-3 and depth-4 models" />
+          <figcaption>The accuracy gain comes with a clear increase in parameters, making complexity a product decision.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/smart-city-compute-tradeoff.png" alt="Computational cost trade-off between depth-3 and depth-4 models" />
+          <figcaption>Mult-adds help evaluate whether the model is suitable for specific deployment environments.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/smart-city-qualitative-results.png" alt="Qualitative segmentation results on Cityscapes validation split" />
+          <figcaption>Qualitative outputs show scene-level segmentation behavior and help identify visual error patterns.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Risk management</p>
+        <h2>AI and product risks</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Product impact</th>
+              <th>Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Misclassification of critical classes</td>
+              <td>Pedestrians, vehicles, or road areas may be segmented incorrectly.</td>
+              <td>Class-wise thresholds, human review, critical-class monitoring.</td>
+            </tr>
+            <tr>
+              <td>Overtrust in visual overlays</td>
+              <td>Users may assume a segmentation map is fully correct.</td>
+              <td>Uncertainty communication, quality indicators, error examples.</td>
+            </tr>
+            <tr>
+              <td>Dataset bias</td>
+              <td>Model may perform worse in cities, weather, or camera conditions not represented in training.</td>
+              <td>External validation, domain adaptation, continuous evaluation.</td>
+            </tr>
+            <tr>
+              <td>Deployment complexity</td>
+              <td>The strongest model may be too heavy for some real-time or edge scenarios.</td>
+              <td>Compression, pruning, quantization, profiling, and model-tier selection.</td>
+            </tr>
+            <tr>
+              <td>Privacy and governance</td>
+              <td>Street images may contain people, vehicles, or sensitive urban data.</td>
+              <td>Privacy-by-design, anonymization, retention limits, governance review.</td>
+            </tr>
+            <tr>
+              <td>Operational misuse</td>
+              <td>Outputs could be used for automated decisions without human oversight.</td>
+              <td>Decision-support framing and clear limits on automated action.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Related publication</p>
+        <h2>Scientific foundation</h2>
+        <p>
+          This case study is connected to an in-press research paper on compact semantic segmentation for smart city applications.
+        </p>
+      </div>
+
+      <div class="publication-grid single-publication">
+        <article class="publication-card latest-publication">
+          <p class="publication-type">In press</p>
+          <h3>A Compact Deep Learning Architecture for Semantic Segmentation of Urban Street Scenes in Smart City Applications</h3>
+          <p>
+            Research paper on a compact custom encoder-decoder architecture for Cityscapes semantic segmentation,
+            ImageNet pretraining, controlled fine-tuning, auxiliary supervision, and depth-performance trade-offs.
+          </p>
+          <div class="publication-actions">
+            <a class="button secondary" href="https://scholar.google.com/citations?user=Wi5fCNIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+            <span class="button ghost-button">Publication link pending</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Learnings</p>
+        <h2>Key trade-offs</h2>
+      </div>
+      <div>
+        <p>
+          This case study shows that AI product value in smart city perception depends on more than a single benchmark score.
+          The product must balance segmentation quality, model complexity, deployment cost, privacy, reliability, and interpretability.
+        </p>
+        <p>
+          The most important product trade-off is between stronger segmentation performance and operational feasibility.
+          The depth-4 model produces the strongest result, but it is also more complex. In a product setting, the best choice depends
+          on whether the target deployment prioritizes accuracy, speed, hardware cost, or scalability.
+        </p>
+        <p>
+          Another important lesson is that pretraining and controlled transfer learning are not just technical refinements.
+          They directly affect product reliability because they improve the model’s ability to understand complex urban scenes.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Laura Cosma</h2>
+        <p>AI Product Manager | Computer Vision, Forecasting & Applied AI Products</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="mailto:lauracosma333@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/laura-cosma-993125312/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/CosmaLaura" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

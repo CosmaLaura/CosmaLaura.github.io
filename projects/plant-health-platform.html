@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Plant Health Monitoring Platform | Laura Cosma</title>
+  <meta name="description" content="AI Plant Health Monitoring Platform - AI product case study by Laura Cosma, based on doctoral research in plant disease detection, object localization, segmentation, and field-oriented crop monitoring." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo">Laura Cosma</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#about">About</a>
+        <a href="../cv.pdf">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <div>
+        <p class="eyebrow">Main product case study</p>
+        <h1>AI Plant Health Monitoring Platform</h1>
+        <p class="hero-summary">
+          A computer vision product case study based on doctoral research in multi-label plant disease detection.
+          The platform is designed to support early plant disease diagnosis, object-level localization,
+          affected-area analysis, and field-oriented crop health monitoring.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#results">View Results</a>
+          <a class="button secondary" href="../index.html#projects">Back to Portfolio</a>
+        </div>
+      </div>
+
+      <aside class="project-meta-card">
+        <h2>Case study focus</h2>
+        <ul>
+          <li>AI product strategy</li>
+          <li>Computer vision</li>
+          <li>Multi-label classification</li>
+          <li>Object detection and segmentation</li>
+          <li>Precision agriculture</li>
+          <li>Edge / mobile deployment potential</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>From doctoral research to AI product strategy</h2>
+      </div>
+      <div>
+        <p>
+          AI Plant Health Monitoring Platform is a product case study built on doctoral research in computer vision
+          and plant disease detection. The research addresses multi-label classification of tomato leaf conditions,
+          where a single image may contain multiple simultaneous issues such as fungal infection, viral disease,
+          pest damage, or nutrient deficiency.
+        </p>
+        <p>
+          The product concept translates this research into a practical decision-support platform for farmers,
+          agronomists, agri-tech companies, and agricultural researchers, while keeping the MVP focused and realistic.
+        </p>
+        <div class="status-note">
+          <strong>Status:</strong> Product case study based on doctoral research. The classification component is supported
+          by experimental results; object detection, segmentation, and multispectral monitoring are included as planned
+          product extensions.
+        </div>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">My role</p>
+        <h2>Research foundation translated into product strategy</h2>
+      </div>
+      <div>
+        <p>
+          This case study is based on my doctoral research and product translation work. My contribution includes
+          problem framing, dataset strategy, model evaluation, product positioning, MVP definition, roadmap design,
+          AI risk analysis, and the translation of research results into a product-oriented case study.
+        </p>
+        <p>
+          The goal is not only to present a high-performing AI model, but to show how a research prototype can be shaped
+          into a realistic AI product concept with users, metrics, risks, deployment constraints, and decision-support value.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Problem</p>
+        <h2>Plant health monitoring is difficult to scale</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          Plant diseases and stress factors are often detected too late, when crop damage has already progressed.
+          Manual inspection is time-consuming, subjective, and difficult to scale, especially when multiple symptoms
+          appear on the same plant.
+        </p>
+        <p>
+          Many AI-based plant disease systems focus on single-label classification, assuming that each image contains
+          only one disease or condition. In real agricultural settings, plants may suffer from multiple simultaneous
+          problems, such as fungal infection combined with pest damage or nutrient deficiency.
+        </p>
+        <p>
+          This creates a product opportunity for an AI system that can detect multiple co-occurring conditions,
+          communicate uncertainty, localize affected regions, and support faster field-level decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Users</p>
+        <h2>Target users and adoption context</h2>
+      </div>
+
+      <div class="skill-columns">
+        <article>
+          <h3>Farmers</h3>
+          <p>Need fast, understandable plant health assessments that support earlier intervention and reduce losses.</p>
+        </article>
+        <article>
+          <h3>Agronomists</h3>
+          <p>Need structured evidence, confidence information, and visual support before making field-level recommendations.</p>
+        </article>
+        <article>
+          <h3>Agri-tech companies</h3>
+          <p>Need reliable AI modules that can be integrated into monitoring platforms, drones, or agricultural equipment.</p>
+        </article>
+        <article>
+          <h3>Researchers</h3>
+          <p>Need reproducible experiments, measurable metrics, and interpretable model behavior.</p>
+        </article>
+      </div>
+
+      <div class="note-card">
+        <strong>Product framing:</strong> end users include farmers, agronomists, and researchers.
+        Potential buyers or institutional adopters include agri-tech companies, farms, research centers,
+        and agricultural service providers.
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Personas</p>
+        <h2>Two representative users</h2>
+        <p>
+          These personas keep the product focused on real decisions, not only on model outputs.
+        </p>
+      </div>
+
+      <div class="two-card-grid">
+        <article class="content-card persona-card">
+          <h3>Agronomist</h3>
+          <p>
+            Needs reliable AI-assisted diagnosis, confidence information, and visual evidence before making field-level recommendations.
+          </p>
+          <ul>
+            <li>Validates whether symptoms indicate one or multiple conditions.</li>
+            <li>Needs uncertainty and class-level confidence, not a black-box answer.</li>
+            <li>Values reports that can be reviewed, shared, and compared over time.</li>
+          </ul>
+        </article>
+
+        <article class="content-card persona-card">
+          <h3>Farm Manager</h3>
+          <p>
+            Needs fast field-level plant health assessment, simple reports, and early warnings to reduce crop losses.
+          </p>
+          <ul>
+            <li>Wants a quick answer from a plant image captured in the field.</li>
+            <li>Needs clear explanations without deep technical terminology.</li>
+            <li>Values fast triage and expert escalation when confidence is low.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Vision</p>
+        <h2>A modular AI decision-support product</h2>
+      </div>
+      <div>
+        <p>
+          The vision is to create a modular AI product that helps users detect plant diseases from images,
+          localize affected plant regions with object detection, estimate disease severity, and generate
+          monitoring reports for decision support.
+        </p>
+        <p>
+          The platform does not replace agronomists and does not prescribe automatic pesticide treatments.
+          It provides AI-assisted decision support, confidence scores, visual evidence, and structured reports
+          that can help experts act faster.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">User journey</p>
+        <h2>From image capture to decision support</h2>
+        <p>
+          The product experience should be simple enough for field use, while still preserving expert validation and uncertainty communication.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+        <article><span>1</span><h3>Capture or upload</h3><p>The user captures or uploads a tomato leaf image.</p></article>
+        <article><span>2</span><h3>AI analysis</h3><p>The system analyzes the image using the multi-label AI model.</p></article>
+        <article><span>3</span><h3>Prediction</h3><p>The user receives predicted conditions with confidence scores.</p></article>
+        <article><span>4</span><h3>Visual evidence</h3><p>The product displays visual cues and a short diagnosis summary.</p></article>
+        <article><span>5</span><h3>Report or review</h3><p>The user exports a report or requests expert validation.</p></article>
+        <article><span>6</span><h3>Feedback loop</h3><p>Feedback is stored to improve future validation and monitoring.</p></article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Core capabilities</p>
+        <h2>AI modules translated into product capabilities</h2>
+      </div>
+
+      <div class="capability-grid">
+        <article>
+          <h3>Classification</h3>
+          <p><strong>Product role:</strong> identifies whether the plant is healthy or affected by one or more conditions.</p>
+          <p><strong>User value:</strong> fast initial diagnosis and triage.</p>
+        </article>
+        <article>
+          <h3>Object detection</h3>
+          <p><strong>Product role:</strong> localizes leaves, fruits, plants, or affected regions in complex images.</p>
+          <p><strong>User value:</strong> more precise field monitoring, counting, and localization.</p>
+        </article>
+        <article>
+          <h3>Segmentation</h3>
+          <p><strong>Product role:</strong> separates relevant plant areas or highlights affected regions.</p>
+          <p><strong>User value:</strong> severity estimation and clearer visual evidence.</p>
+        </article>
+        <article>
+          <h3>Reporting</h3>
+          <p><strong>Product role:</strong> converts AI results into readable summaries and exportable reports.</p>
+          <p><strong>User value:</strong> supports decisions, review, and communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Extended AI capabilities</p>
+        <h2>Beyond classification: localization, monitoring, and future automation</h2>
+        <p>
+          The research roadmap includes object detection, segmentation, multispectral monitoring, and real-world field validation.
+          In product terms, these capabilities expand the platform from image diagnosis toward continuous crop monitoring.
+        </p>
+      </div>
+
+      <div class="feature-detail-grid">
+        <article class="content-card">
+          <h3>Object Detection Module</h3>
+          <p>
+            Object detection enables the product to localize affected plant regions instead of only predicting that a disease is present.
+            It can also support fruit counting, yield estimation, and future integration with agricultural robots or drone-based monitoring.
+          </p>
+          <ul>
+            <li>Detect affected areas on leaves or plants.</li>
+            <li>Identify diseased plant regions in complex field images.</li>
+            <li>Count fruits or plant objects for yield estimation.</li>
+            <li>Support future robot-assisted or drone-assisted crop monitoring.</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Segmentation Module</h3>
+          <p>
+            Segmentation can isolate leaves or affected areas from complex backgrounds, supporting more precise severity estimation
+            and potentially improving classification performance as a preprocessing or meta-model stage.
+          </p>
+          <ul>
+            <li>Separate plant regions from background noise.</li>
+            <li>Highlight affected regions for explainability.</li>
+            <li>Estimate disease severity from affected area size.</li>
+            <li>Support better user trust through visual evidence.</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Multispectral Monitoring</h3>
+          <p>
+            Multispectral drone imagery can extend the product beyond visible symptoms by using vegetation indices and field-level analysis.
+            Related work on multispectral U-Net semantic segmentation supports weed/crop/background mapping and broader crop health monitoring.
+          </p>
+          <ul>
+            <li>Analyze drone-based multispectral images.</li>
+            <li>Use vegetation indices for plant stress monitoring.</li>
+            <li>Support field-level crop health maps.</li>
+            <li>Enable earlier intervention before visible damage becomes severe.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Research foundation</p>
+        <h2>Compact deep learning for realistic deployment</h2>
+      </div>
+      <div>
+        <p>
+          The technical foundation of this product concept is doctoral research on compact deep learning architectures
+          for multi-label plant disease classification. The research focuses on tomato leaf images and addresses the
+          challenge of identifying multiple simultaneous conditions on the same leaf.
+        </p>
+        <p>
+          The proposed CDLA model uses depthwise separable convolutions and residual connections to balance high
+          classification performance with low computational cost. This makes it suitable for real-time or
+          edge-oriented deployment scenarios.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Related publications</p>
+        <h2>Scientific foundation</h2>
+        <p>
+          This product case study is connected to doctoral research and related scientific publications
+          on compact CNN architectures for tomato plant disease detection, multi-label plant health classification, and multispectral semantic weed mapping.
+        </p>
+      </div>
+
+      <div class="publication-grid">
+        <article class="publication-card latest-publication">
+          <p class="publication-type">Springer SOCO 2026 · Latest</p>
+          <h3>Risk-Aware Multispectral U-Net for Semantic Weed Mapping in Precision Agriculture</h3>
+          <p>
+            Latest related work on semantic segmentation for weed/crop/background mapping using multispectral UAV imagery.
+            It supports the platform direction toward multispectral monitoring and field-level crop analysis.
+          </p>
+          <div class="publication-actions">
+            <a class="button primary" href="https://link.springer.com/chapter/10.1007/978-3-032-29254-4_5" target="_blank" rel="noopener noreferrer">
+              View on Springer
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=Wi5fCNIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <p class="publication-type">IEEE ICE/ITMC 2025</p>
+          <h3>A Compact Deep Learning Architecture for Multi-Label Classification of Plant Diseases</h3>
+          <p>
+            Core research foundation for the multi-label classification component used in this product case study.
+          </p>
+          <div class="publication-actions">
+            <a class="button primary" href="https://ieeexplore.ieee.org/document/11106670/" target="_blank" rel="noopener noreferrer">
+              View on IEEE Xplore
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=Wi5fCNIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <p class="publication-type">Springer SOCO 2024</p>
+          <h3>TPC_Net: An Efficient CNN Architecture for Tomato Plant Disease and Pest Classification</h3>
+          <p>
+            Related work on efficient CNN architectures for tomato plant disease and pest classification.
+          </p>
+          <div class="publication-actions">
+            <a class="button primary" href="https://link.springer.com/chapter/10.1007/978-3-031-75010-6_19" target="_blank" rel="noopener noreferrer">
+              View on Springer
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=Wi5fCNIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <p class="publication-type">IEEE ICE/ITMC 2024</p>
+          <h3>A Novel CNN Approach for Accurate Tomato Disease Classification</h3>
+          <p>
+            Related work on CNN-based tomato disease classification and early research validation.
+          </p>
+          <div class="publication-actions">
+            <a class="button primary" href="https://ieeexplore.ieee.org/abstract/document/10794256" target="_blank" rel="noopener noreferrer">
+              View on IEEE Xplore
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=Wi5fCNIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">MVP</p>
+        <h2>MVP scope</h2>
+        <p>
+          The MVP focuses on validating the core product value: can users upload a plant image, receive a reliable
+          AI-assisted diagnosis, understand the confidence of the prediction, and use the result as decision-support information?
+        </p>
+      </div>
+
+      <div class="two-card-grid">
+        <article class="content-card">
+          <h3>Included in MVP</h3>
+          <ul>
+            <li>Image upload</li>
+            <li>Multi-label plant disease classification</li>
+            <li>Confidence score for each predicted condition</li>
+            <li>Basic visual explanation</li>
+            <li>Result summary</li>
+            <li>Expert/user feedback</li>
+            <li>Simple report export</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Not included in MVP</h3>
+          <ul>
+            <li>Full mobile application</li>
+            <li>Production-ready object detection module</li>
+            <li>Drone/GIS integration</li>
+            <li>Automatic pesticide recommendation</li>
+            <li>Autonomous treatment decisions</li>
+            <li>Real-time robotic intervention</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Prioritization</p>
+        <h2>MoSCoW prioritization</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Priority</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Image upload</td><td>Must</td><td>Required input for the product.</td></tr>
+            <tr><td>Multi-label disease classification</td><td>Must</td><td>Core product value.</td></tr>
+            <tr><td>Confidence score</td><td>Must</td><td>Helps users interpret prediction reliability.</td></tr>
+            <tr><td>Result summary</td><td>Must</td><td>Makes model output understandable.</td></tr>
+            <tr><td>Visual explanation</td><td>Should</td><td>Increases user trust.</td></tr>
+            <tr><td>Expert feedback</td><td>Should</td><td>Improves validation and future model improvement.</td></tr>
+            <tr><td>Segmentation of affected regions</td><td>Should</td><td>Supports severity estimation.</td></tr>
+            <tr><td>Object detection</td><td>Could</td><td>Useful for localization, fruit counting, and field monitoring, but not required for the first MVP.</td></tr>
+            <tr><td>Drone/GIS integration</td><td>Could</td><td>Valuable later, but too complex for MVP.</td></tr>
+            <tr><td>Automatic treatment prescription</td><td>Won’t for now</td><td>High risk; requires expert validation and regulatory caution.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Product roadmap</h2>
+      </div>
+
+      <div class="roadmap">
+        <article>
+          <span>Phase 1</span>
+          <h3>MVP</h3>
+          <p>Image upload, multi-label disease classification, confidence score, and result summary.</p>
+        </article>
+        <article>
+          <span>Phase 2</span>
+          <h3>Trust & Explainability</h3>
+          <p>Visual explanations, affected-region analysis, expert feedback, and uncertainty communication.</p>
+        </article>
+        <article>
+          <span>Phase 3</span>
+          <h3>Localization & Monitoring</h3>
+          <p>Object detection, segmentation, severity estimation, fruit/plant counting, and multi-image analysis.</p>
+        </article>
+        <article>
+          <span>Phase 4</span>
+          <h3>Decision Support</h3>
+          <p>Structured reports, trend analysis, agronomist validation workflow, and farm-level monitoring.</p>
+        </article>
+        <article>
+          <span>Phase 5</span>
+          <h3>Deployment</h3>
+          <p>Web/mobile interface, edge deployment evaluation, security, scalability, and real-world field validation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Metrics</p>
+        <h2>Success metrics</h2>
+      </div>
+
+      <div class="skill-columns">
+        <article>
+          <h3>Product metrics</h3>
+          <p>Activation rate, completed analyses, repeat usage, time to result, user trust score, expert agreement rate, report export rate.</p>
+        </article>
+        <article>
+          <h3>AI performance metrics</h3>
+          <p>Macro F1-score, subset accuracy, Hamming accuracy, Hamming loss, per-class recall, confusion matrix, mAP for object detection, IoU/Dice for segmentation.</p>
+        </article>
+        <article>
+          <h3>Efficiency metrics</h3>
+          <p>Model size, inference time, memory footprint, deployment feasibility on mobile or embedded devices.</p>
+        </article>
+        <article>
+          <h3>Risk metrics</h3>
+          <p>False negative rate, overconfidence rate, performance drop on real-world images, dataset bias.</p>
+        </article>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Research prototype evidence</h3>
+        <p>
+          In the research prototype, the CDLA model achieved approximately <strong>99.55% macro F1-score</strong>,
+          <strong>98.43% subset accuracy</strong>, <strong>99.69% Hamming accuracy</strong>,
+          <strong>0.31% Hamming loss</strong>, a model size of approximately <strong>10.9 MB</strong>,
+          and an average inference time of approximately <strong>9.3 ms per image</strong>.
+        </p>
+        <p>
+          Product interpretation: CDLA provides a strong accuracy-efficiency trade-off, making it more suitable
+          for practical plant health monitoring than large generic models that may be accurate but heavier to deploy.
+        </p>
+      </div>
+    </section>
+
+    <section id="results" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Evidence</p>
+        <h2>Results & visual evidence</h2>
+        <p>
+          These results support the product feasibility hypothesis: a compact, task-specific model can provide
+          high-quality multi-label diagnosis while remaining small and fast enough for practical deployment.
+          The strongest message is not that CDLA is always the absolute smallest or fastest model, but that it
+          offers the best overall balance between accuracy, compactness, and deployment feasibility.
+        </p>
+      </div>
+
+      <div class="evidence-grid">
+        <figure>
+          <img src="../assets/plant-architecture.png" alt="AI architecture for plant health monitoring" />
+          <figcaption>Product-oriented view of the compact multi-label AI architecture and its deployment relevance.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/plant-performance.png" alt="Performance comparison between CDLA and baseline models" />
+          <figcaption>CDLA shows the strongest overall accuracy-efficiency balance among the compared models.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/plant-model-size.png" alt="Model size comparison chart" />
+          <figcaption>Model size is a key constraint for practical mobile, edge, or field deployment.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/plant-inference-time.png" alt="Inference time comparison chart" />
+          <figcaption>Inference time supports the evaluation of real-time or near-real-time deployment potential.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/plant-confusion-matrix.png" alt="Confusion matrix for multi-label plant disease classification" />
+          <figcaption>Confusion matrices help inspect class-level reliability and identify misclassification patterns.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/plant-feature-maps.png" alt="Feature map evolution through the CDLA network" />
+          <figcaption>Feature map evolution illustrates progressive compression and higher-level feature learning.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Risk management</p>
+        <h2>AI risks and mitigations</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Product impact</th>
+              <th>Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>False negative diagnosis</td>
+              <td>Diseased plants may be missed.</td>
+              <td>Confidence thresholds, expert review, conservative reporting.</td>
+            </tr>
+            <tr>
+              <td>False positive diagnosis</td>
+              <td>Unnecessary treatment costs.</td>
+              <td>Explainability, confirmation workflow, expert validation.</td>
+            </tr>
+            <tr>
+              <td>Dataset bias</td>
+              <td>Poor performance outside training conditions.</td>
+              <td>Field data collection, external validation, continuous evaluation.</td>
+            </tr>
+            <tr>
+              <td>Overconfidence</td>
+              <td>Users may overtrust wrong predictions.</td>
+              <td>Calibration, uncertainty display, warning messages.</td>
+            </tr>
+            <tr>
+              <td>Real-world variability</td>
+              <td>Lighting, background, camera quality, and plant variety may affect results.</td>
+              <td>Data augmentation, field testing, robust preprocessing.</td>
+            </tr>
+            <tr>
+              <td>Misuse of recommendations</td>
+              <td>Users may treat AI output as expert advice.</td>
+              <td>Decision-support framing; no automatic treatment prescriptions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container section two-column">
+      <div>
+        <p class="eyebrow">Learnings</p>
+        <h2>Key trade-offs</h2>
+      </div>
+      <div>
+        <p>
+          This case study shows that AI product value does not come only from model accuracy.
+          For real deployment, accuracy must be balanced with model size, inference time,
+          interpretability, user trust, data quality, and operational risk.
+        </p>
+        <p>
+          The most important product trade-off is between model complexity and deployability.
+          Large transfer-learned models can be powerful, but they may be too heavy for mobile or field scenarios.
+          A compact task-specific architecture can offer a better balance when the product goal is practical deployment,
+          not only benchmark performance.
+        </p>
+        <p>
+          Another key learning is that multi-label classification is more realistic than single-label diagnosis
+          for plant health monitoring, but it also increases the need for careful metrics, expert validation,
+          and clear communication of uncertainty.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Laura Cosma</h2>
+        <p>AI Product Manager | Computer Vision, Forecasting & Applied AI Products</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="mailto:lauracosma333@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/laura-cosma-993125312/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/CosmaLaura" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
